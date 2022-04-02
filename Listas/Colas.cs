@@ -39,6 +39,11 @@ namespace Listas
             int lstCount = lista.Count;
             for (int i = 0; i < lstCount; i++)
             {
+                if (i > 0)
+                {
+                    datos = "\n";
+                }
+                datos += "$[{ i}]-{ lista[{ i}]}";
 
             }
             return datos;
