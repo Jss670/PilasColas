@@ -7,7 +7,7 @@ namespace Listas
     public class Colas
     {
         private List<string> lista;
-        public Colas()
+        public Colas(int a)
         {
             lista = new List<string>();
         }
@@ -41,7 +41,7 @@ namespace Listas
             {
                 if (i > 0)
                 {
-                    datos = "\n";
+                    datos += "\n";
                 }
                 datos += "$[{ i}]-{ lista[{ i}]}";
 

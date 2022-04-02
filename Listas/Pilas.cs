@@ -9,7 +9,7 @@ namespace Listas
     public class Pilas
     {
         private List<string> list;
-        public Pilas()
+        public Pilas(int v)
         {
             list = new List<string>();
         }
@@ -19,7 +19,7 @@ namespace Listas
         }
         private bool ValidaVacio()
         {
-            return list.Count > 0;
+            return list.Count ==0;
         }
         public void Eliminar()
         {
@@ -37,12 +37,12 @@ namespace Listas
             {
                 return "Lista Vacia";
             }
-            int lstCount = lista.Count;
+            int lstCount = list.Count;
             for (int i = 0; i < lstCount; i++)
             {
                 if (i > 0)
                 {
-                    datos = "\n";
+                    datos += "\n";
                 }
                 datos += "$[{ i}]-{ lista[{ i}]}";
 
